@@ -57,6 +57,9 @@ can be dragged and import will start.
     <script type="text/javascript" src="OOXMLParser.js"></script>
     <script type="text/javascript" src="PPTXParser.js"></script>
     <script type="text/javascript" src="PPTXSlideParser.js"></script>
+    <script type="text/javascript" src="Presentation.js"></script>
+    <script type="text/javascript" src="Relationships.js"></script>
+    <script type="text/javascript" src="Slide.js"></script>
     <script>
 
         Polymer('kino-pptx-import', {
@@ -115,7 +118,10 @@ can be dragged and import will start.
                 }
             },
             loadFile: function(file) {
+
                 var importer = new PPTXImporter(file, this);
+
+
 
             }
         }) ;

@@ -44,7 +44,7 @@ function PPTXSlideParser(name, xmldoc, onSuccess, onFileReadError) {
 		}
 
 		var children = xmlnode.children;
-		for (child in children) {
+		for (var child in children) {
 			parse(children[child]);
 		}
 	}

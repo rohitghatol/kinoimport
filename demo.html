@@ -7,6 +7,8 @@
     <script src="../platform/platform.js"></script>
     <link rel="import" href="kinoimport.html">
     <link rel="import" href="../kinoscribe/kinoscribe.html">
+    <link rel="import" href="../kinolayouts/kinolayouts.html">
+    <link rel="import" href="../kinoshapes/kinoshapes.html">
     <style>
         .slide{
             border:1px solid blue;
@@ -32,11 +34,18 @@
             line-height: 36px;
             letter-spacing: -1px;
         }
+        #stage{
+            position: absolute;
+            top:0px;
+            left:0px;
+            width:100%;
+            height:100%;
+            display:none;
+        }
 </style>
 </head>
-<body unresolved >
+<body unresolved>
+<div id="stage"></div>
 <kino-pptx-import ref="stage"></kino-pptx-import>
-<div id="stage">
-</div>
 </body>
 </html>
